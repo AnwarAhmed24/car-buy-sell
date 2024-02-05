@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Buy/Sell</title>
+    <!-- THESE ARE FONT-AWESOME, GOOGLE-FONT, BS-CSS, MAIN-CSS -->
+    <script src="https://kit.fontawesome.com/6685750968.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="assets/img/user.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+   <!-- THESE ARE ANOTHI CSS -->
+<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+<link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+<link rel="stylesheet" href="assets/css/nice-select.css">
+
+
+</head>
+<body>
+
+<!--===== Start Header Menu =====-->
+ 
+<header id="header">
+<!--Start Top Bar Menu-->
+<div class="container top-header d-none d-md-block border-bottom py-2">
+    <div class="row">
+        <div class="col-4">
+            
+                <ul class="p-0 m-0 ms-4">
+            <li class="d-inline mx-2"><i class="fa-solid fa-language"></i>
+                <select class="dropdown location form-select-sm  border-0 p-0">
+                    <option selected>English</option>
+                    <option value="1">عربي</option>
+                </select>
+            </li>
+
+                <li class="d-inline mx-2"><i class="fa-solid fa-money-bill"></i>
+                    <select class="dropdown location form-select-sm border-0 p-0">
+                        <option selected valud="AED">AED</option>
+                        <option value="USD">USD</option>
+                    </select>
+                </li>
+                </ul>
+        </div>
+
+        <div class="col-5 text-end  ">
+           
+                <ul class="p-0 m-0">
+                    <li class="d-inline mx-3"><i class="fa-regular fa-heart me-1 bg-white p-2 rounded-circle text-color"></i><a href="user-dashboard.html" target="" class="text-dark topbar-text">Favorite</a>
+                        </li>
+            
+                    
+            
+                    <li class="d-inline mx-3"><i class="fa-regular fa-comment me-1 bg-white p-2 rounded-circle text-color"></i><a href="user-dashboard.html" target=""
+                            class="text-dark topbar-text">Chat</a></li>
+
+                           
+
+                            <li class="d-inline mx-3"><i class="fa-regular fa-address-card me-1 bg-white p-2 rounded-circle text-color"></i>
+                                <a href="user-dashboard.html" target=""
+                                    class="text-dark topbar-text">My Ads</a>   
+                               </li>
+                </ul>
+            
+        </div>
+
+
+<div class="col-3">
+
+        <ul class="bg-dar text-ligh m-0">
+            <li class="d-inline">
+                <img src="assets/img/user.png" width="24px">
+                <a href="signup-login.html"
+                    target="" class="text-dark fw-light ms-1 fw-bold user">Signup/ Login</a></li>
+    
+        </ul>
+    
+
+</div>
+
+    </div>
+</div>
+
+<!--Start Nav Menu Bar-->
+<nav class="navbar navbar-light navbar-expand-md ">
+    <div class="container p-md-0">
+        <a class="navbar-brand site-logo" href="#">
+            <img width="130px" alt="logo" src="assets/img/logo.png">
+        </a>
+
+        <ul style="font-size: 14px;" class="navbar-nav align-items-center me-auto flex-row display-media">
+         
+            <li class="nav-item px-2 dropdown" >
+                <a class="nav-link fw-bold dropdown-toggle" data-bs-toggle="dropdown" href="#">Used Cars</a>
+                <ul class="dropdown-menu mt-4 bg-light row py-3" style="width: 400px;">
+
+                    <div class="col-6 float-start border-end border-secondary">
+                            <li>
+                                <h4 class="dropdown-header border-bottom border-secondary  text-dark fs-6">Popular Makes</h4>
+                            </li>
+                            
+                            <li><a class="dropdown-item" href="#">Toyota</a></li>
+                            <li><a class="dropdown-item" href="#">Mercedes-Benz</a></li>
+                            <li><a class="dropdown-item" href="#">Lexus</a></li>
+                            <li><a class="dropdown-item" href="#">Nissan</a></li>
+                            <li><a class="dropdown-item" href="#">Volkswagen</a></li>
+                            <li><a class="dropdown-item" href="#">Suzuki</a></li>
+                            <li><a class="dropdown-item" href="#">Mitsubishi</a></li>
+            
+                    </div>
+<div class="col-6 bg-inf float-end ">
+    <li>
+        <h4 class="dropdown-header text-dark fs-6 border-bottom border-secondary ">Propuller Brands</h4>
+    </li>
+
+    <li><a class="dropdown-item" href="#">Toyota Hilux</a></li>
+    <li><a class="dropdown-item" href="#">Toyota Prado</a></li>
+    <li><a class="dropdown-item" href="#">Toyota Camry</a></li>
+    <li><a class="dropdown-item" href="#">Toyota Fortuner</a></li>
+    <li><a class="dropdown-item" href="#">Nissan Patrol</a></li>
+    <li><a class="dropdown-item" href="#">Ford Mustang</a></li>
+    <li><a class="dropdown-item" href="#">Toyota Corolla</a></li>
+</div>
+               
+                </ul>
+            </li>
+            
+            <li class="nav-item px-2 dropdown ">
+                <a class="nav-link fw-bold dropdown-toggle" data-bs-toggle="dropdown" href="#">Car Parts</a>
+                <ul class="dropdown-menu mt-4" style="width: 200px;">
+                    <li>
+                        <h5 class="dropdown-header text-dark fs-6 border-bottom border-secondary">Accessories & Parts</h5>
+                    </li>
+            
+                    <li><a class="dropdown-item" href="#">Hood</a></li>
+                    <li><a class="dropdown-item" href="#">Radiator Support</a></li>
+                    <li><a class="dropdown-item" href="#">Bumpers</a></li>
+                    <li><a class="dropdown-item" href="#">A/C Condensers</a></li>
+                    <li><a class="dropdown-item" href="#">Axle</a></li>
+                    <li><a class="dropdown-item" href="#">Piston</a></li>
+                    <li><a class="dropdown-item" href="#">Air Filter</a></li>
+                    <li><a class="dropdown-item" href="#">Oil Filter</a></li>
+                    <li><a class="dropdown-item" href="#">Steering Wheel</a></li>
+                        <li class="border-1 border-top"><a href="#" class="ps-3 text-danger bg-white">View More</a></li>
+                              </ul>
+            </li>
+            <li class="nav-item px-2">
+                <a class="nav-link fw-bold" href="">FAQ</a>
+            </li>
+            
+            <li class="nav-item px-2">
+                <a class="nav-link fw-bold" href="about-us.html">
+                    About Us</a>
+            </li>
+            <li class="nav-item px-2">
+                <a class="nav-link fw-bold" href="contact.html">Support</a>
+            </li>
+          
+        </ul>
+
+<form class="d-flex me-auto hidden search-btn" role="search">
+    <input class="form-control border-2 border-dark rounded-0" type="search" placeholder="Search for Cars/Parts" aria-label="Search">
+    <button class="btn btn-outline-dark btn-outline border-2 border-start-0 rounded-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+</form>
+
+    <a href="add-car.html" class="btn display-media bg-color text-light btn-md rounded d-md-block fw-bold px-lg-3 py-2"><i class="fa-solid fa-cart-shopping me-2"></i>Sell Your Car </a>
+
+    <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+<!--Start OffCanvas Menu-->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Hi, <b>Username!</b></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+
+<div class="mobile-sidebar">
+
+    <ul class="ps-2">
+        <li class="d-inline me-2 position-relative">
+            <span class="position-absolute top-0 start-0 translate-middle badge rounded-circle bg-color">
+                3
+            </span>
+            <a
+                href="user-dashboard.html" target="" class="text-color shadow-sm p-2 rounded-pill"><i class="fa-regular fa-heart p-2 rounded-circle"></i>Favorite</a>
+        </li>
+
+        <li class="d-inline mx-2 position-relative">
+            <span class="position-absolute top-0 start-0 translate-middle badge rounded-circle bg-color">
+                1
+            </span><a href="user-dashboard.html" target="" class=" text-color p-2 rounded-pill shadow-sm"><i
+                    class="fa-regular fa-comment p-2 rounded-circle "></i>Chat</a>
+        </li>
+
+
+<li class="d-inline mx-3 position-relative">
+    <span class="position-absolute top-0 start-0 translate-middle badge rounded-circle bg-color">
+        0
+    </span><a href="user-dashboard.html" target="" class="text-color shadow-sm p-2 rounded-pill"><i
+            class="fa-regular fa-address-card p-2 rounded-circle"></i>Ads</a>
+</li>
+       
+    </ul>
+
+</div>
+
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    
+                            <li class="nav-item dropdown">
+                                <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Used Cars</a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Toyota</a></li>
+                                <li><a class="dropdown-item" href="#">Mercedes-Benz</a></li>
+                                <li><a class="dropdown-item" href="#">Lexus</a></li>
+                                <li><a class="dropdown-item" href="#">Nissan</a></li>
+                                <li><a class="dropdown-item" href="#">Volkswagen</a></li>
+                                <li><a class="dropdown-item" href="#">Suzuki</a></li>
+                                <li><a class="dropdown-item" href="#">Mitsubishi</a></li>
+                                <li class="border-1 border-top"><a href="#" class="ps-3 text-danger bg-white">View More</a></li>
+                                </ul>
+                            </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Car Parts</a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Hood</a></li>
+                        <li><a class="dropdown-item" href="#">Radiator Support</a></li>
+                        <li><a class="dropdown-item" href="#">Bumpers</a></li>
+                        <li><a class="dropdown-item" href="#">A/C Condensers</a></li>
+                        <li><a class="dropdown-item" href="#">Axle</a></li>
+                        <li><a class="dropdown-item" href="#">Piston</a></li>
+                        <li><a class="dropdown-item" href="#">Air Filter</a></li>
+                        <li><a class="dropdown-item" href="#">Oil Filter</a></li>
+                        <li><a class="dropdown-item" href="#">Steering Wheel</a></li>
+                        <li class="border-1 border-top"><a href="#" class="ps-3 text-danger bg-white">View More</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="contact.html">Support</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="contact.html">Terms of Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="contact.html">Privacy Pollicy</a>
+                    </li>
+                </ul>
+    <hr>         
+<span class="me-3 fw-bold text-color">Language:</span>
+<div class="form-check my-2 form-check-inline">
+
+    <input class="form-check-input" type="radio" value="" name="lang" id="english" checked>
+    <label class="form-check-label" for="english">
+       English
+    </label>
+</div>
+<div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" value="" name="lang" id="arabic">
+    <label class="form-check-label" for="arabic">
+        عربي
+    </label>
+</div>
+<br>
+<span class="me-3 fw-bold text-color">Currancy:</span>
+<div class="form-check mt-3 form-check-inline">
+    <input class="form-check-input" type="radio" value="" name="currency" id="usd">
+    <label class="form-check-label" for="usd">
+        USD
+    </label>
+</div>
+<div class="form-check mt-3 form-check-inline">
+    <input class="form-check-input" type="radio" name="currency" id="aed" checked>
+    <label class="form-check-label" for="aed">
+        AED
+    </label>
+</div>
+
+<!-- Socile link -->
+<ul class="social-link d-flex mt-5 justify-content-center">
+    <li class="bg-light m-2 rounded-2"><a href="#" target="_blank"><i class="fab fa-facebook-f "></i></a>
+    <li>
+    <li class="bg-light m-2"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    <li class="bg-light m-2 rounded-2"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+    <li class="bg-light m-2 rounded-2"><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+</ul>
+
+            </div>
+        </div>
+        <!--This is mobile menu-->
+        <div class="col toolbar fixed-bottom d-block d-md-none bg-light">
+          
+            <ul class="py-2 p-0 m-0 text-center">
+                <li class="d-grid-inline px-2">
+                <i class="fa-solid fa-house"></i>
+                    <a href="user-dashboard.html" target="" class="text-color fw-bol  mobile-icon">Home</a>
+                </li>
+            
+                
+            <li class="d-grid-inline px-2">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="car-search-result.html" target="" class="text-color mobile-icon">Search</a>
+            </li>
+    <li class="d-grid-inline px-3  border-3 rounded-3">
+        <i class="fa-solid fa-plus px-3"></i>
+        <a href="add-car.html" target="" class="text-color mobile-icon" >
+        Add Car
+        </a>
+    </li>
+        <li class="d-grid-inline px-2">
+        <i class="fa-solid fa-shop"></i>
+            <a href="user-dashboard.html" target="" class="text-color mobile-icon">Listing</a>
+        </li>
+            <li class="d-grid-inline px-2">
+            <i class="fa-solid fa-user"></i>
+                <a href="user-dashboard.html" target="" class="text-color mobile-icon">Profile</a>
+            </li>
+
+            </ul>
+        </div>
+    </div>
+    
+</nav>
+</header>
+
+<!--===== End Header Menu =====-->
+
+
+<!--===== Start Hero Section =====-->
+<section>
+<div class="container hero-sec">
+   
+    <div class="row bg-overly px-3 py-4">
+<h1 class="text-light fs-4 text-cente fw-bold lh-base hero-title py-1">The best place to buy/sell your Used car or find It's parts in Dubai.
+</h1>
+<!-- Tab Panel -->
+<div class="col-12 my-3 p-0">
+<ul class="nav nav-pills" role="tablist">
+    <li class="nav-item bg- ">
+        <a class="nav-link text-light active px-4 fw-bold" data-bs-toggle="pill" href="#menu1">Select Car</a>
+    </li>
+    <li class="nav-item border-">
+        <a class="nav-link text-light px-4 fw-bold" data-bs-toggle="pill" href="#menu2">Car Parts</a>
+    </li>
+</ul>
+</div>
+    
+<!-- Tab Content -->
+<div class="tab-content bg-white p-4 rounded-2 col-12">
+
+<form action="" id="menu1" class="tab-pane active">
+<div class="d-md-flex">
+
+<div class="col-12 col-md-2 mx-1 my-">
+<span class="text-color"><i class="fa-solid fa-city me-2"></i>City</span>
+    <div class="wide mt-2 mb-3 mb-md-0" id="select-city">
+        <select class="form-select form-select-md rounded-0">
+            <option value="">All Cities (UAE)</option>
+            <option selected value="Dubai">Dubai</option>
+            <option value="Abu Dhabi">Abu Dhabi</option>
+            <option value="Ras al Khaimah">Ras al Khaimah</option>
+            <option value="Fujairah">Fujairah</option>
+            <option value="Sharjah">Sharjah</option>
+            <option value="Ajman">Ajman</option>
+            <option value="Umm al Quwain">Umm al Quwain</option>
+            <option value="Al Ain">Al Ain</option>
+           
+        </select>
+    </div>
+</div>
+
+<div class="col-12 col-md-2 mx-1">
+    <span class="text-color"><i class="fa-solid fa-screwdriver-wrench me-2"></i>Makes</span>
+    <div class="wide mt-2 mb-3 mb-md-0" id="select-make">
+        <select class="form-select form-select-md rounded-0">
+            <option value="">All in Cars</option>
+            <option value="">Toyota</option>
+            <option value="">Acura</option>
+            <option value="">Alfa Romeo</option>
+            <option value="">Bentley</option>
+            <option value="">BMW</option>
+            <option value="">Bugatti</option>
+            <option value="">Daewoo</option>
+            <option value="">Fisker</option>
+            <option value="">Lamborghini</option>
+            <option value="">Honda</option>
+        </select>
+    </div>
+</div>
+
+<div class="col-12 col-md-2 mx-1">
+    <span class="text-color"> <i class="fa-solid fa-bandage me-2"></i>Models</span>
+    <div class="wide mt-2 mb-3 mb-md-0" id="select-model">
+        <select class="form-select form-select-md rounded-0">
+            <option value="">All in Models</option>
+            <option value="">Toyota Land Cruiser</option>
+            <option value="">Nissan Patrol</option>
+            <option value="">Toyota Prado</option>
+            <option value="">Nissan Altima</option>
+            <option value="">Toyota RAV 4</option>
+            <option value="">Toyota Corolla</option>
+        </select>
+    </div>
+</div>
+
+<div class="col-12 col-md-2 mx-1">
+    <span class="text-color "><i class="fa-solid fa-car me-2"></i>Transmission</span>
+    <div class="wide mt-2 mb-3 mb-md-0" id="select-transmission">
+        <select class="form-select form-select-md rounded-0">
+            <option selected value="">Automatic</option>
+            <option value="">Manual</option>
+            
+        </select>
+    </div>
+</div>
+
+<div class="col-12 col-md-2 ms-2 mt-4">
+    <a href="car-search-result.html" type="submit" class="btn mt-1 bg-color text-light btn-md advance-search"><i class="fa-solid fa-magnifying-glass m-1"></i>Search</a>
+</div>
+<div class="col-12 col-md-2 mt-2 ms-2 ms-md-0">
+    <a href="car-search-result.html" style="font-size: 12px;" class="btn btn-outline-dark btn-md mt-4"><i class="fa-solid fa-arrow-up-wide-short" ></i>Advance Search</a>
+</div>
+
+</div>
+</form>
+
+<form action="" id="menu2" class="tab-pane fade">
+<div class="d-md-flex">
+
+    <div class="col-12 col-md-2 mx-2">
+        <span class="text-color"><i class="fa-brands fa-bandcamp me-2"></i>Brands</span>
+        <div class="wide mt-2 mb-3 mb-md-0" id="parts-brand">
+            <select class="form-select form-select-md rounded-0">
+                <option value="">Toyota</option>
+                <option value="">Acura</option>
+                <option value="">Alfa Romeo</option>
+                <option value="">Bentley</option>
+                <option value="">BMW</option>
+                <option value="">Bugatti</option>
+                <option value="">Daewoo</option>
+                <option value="">Fisker</option>
+                <option value="">Lamborghini</option>
+                <option value="">Honda</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-2 mx-2">
+        <span class="text-color"><i class="fa-solid fa-bandage me-2"></i>Models</span>
+        <div class="wide mt-2 mb-3 mb-md-0" id="parts-model">
+        <select class="form-select form-select-md rounded-0">
+            <option value="">Toyota Land Cruiser</option>
+            <option value="">Nissan Patrol</option>
+            <option value="">Toyota Prado</option>
+            <option value="">Nissan Altima</option>
+            <option value="">Toyota RAV 4</option>
+            <option value="">Toyota Corolla</option>
+        </select>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-2 mx-2">
+        <span class="text-color"> <i class="fa-solid fa-screwdriver-wrench me-2"></i>Parts Name</span>
+        <div class="wide mt-2 mb-3 mb-md-0" id="parts-name">
+            <select class="form-select form-select-md rounded-0">
+                <option value="">Bumper</option>
+                <option value="">A/C Condensers</option>
+                <option value="">Piston</option>
+                <option value="">Air Filter</option>
+                <option value="">Steering Wheel</option>
+                <option value="">Radiator Support</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-2 mx-2">
+        <span class="text-color "><i class="fa-solid fa-calendar-week me-2"></i>Condtions</span>
+        <div class="wide mt-2 mb-3 mb-md-0" id="parts-condtion">
+            <select class="form-select form-select-md rounded-0">
+                <option selected value="">New</option>
+                <option value="">Used</option>
+
+            </select>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-3 text-md-center pb-3 pb-md-0 ms-2 mt-4">
+        <a href="car-search-result.html" type="submit" class="btn mt-1 bg-color text-light btn-md advance-search"><i
+                class="fa-solid fa-magnifying-glass m-1"></i>Search</a>
+    </div>
+
+</div>
+</form>
+
+</div>
+
+
+</div>
+
+    </div>
+
+
+</section>
+
+<!--===== End Hero Section =====-->
+
+<!--===== Start Car Brand Section =====-->
+<section>
+    <div class="container py-5 bg-inf overflow-hidde">
+        <div class="row">
+            <h1 class="text-color fs-4 text-center fw-bold py-4">Most Propuller Brands
+            </h1>
+            <div class="col-auto bg- p-0">
+                <div class="brand-slider">
+
+                  <div class="brand-ite bg- position-relative "><img class="brand-img" src="assets/img/brand/make_64818876ea09e_mercedes-benz-logo.png">
+                <h6 class="brand-title start-50 translate-middle">Mercedes-Benz</h4>
+                </div>
+
+                <div class="brand-ite border- px- position-relative "><img class="brand-img"
+                        src="assets/img/brand/make_6493f1164f12a_toyota-logo.png">
+                    <h6 class="brand-title start-50 translate-middle">Toyota</h4>
+                </div>
+
+                <div class="brand-ite border- px- position-relative "><img class="brand-img"
+                        src="assets/img/brand/make_64818542d5049_hyundai-logo.png">
+                    <h6 class="brand-title start-50 translate-middle">Hyundai</h4>
+                </div>
+
+            <div class="brand-ite border- px- position-relative "><img class="brand-img"
+                    src="assets/img/brand/make_648186f78a84a_land-rover-logo.png">
+                <h6 class="brand-title start-50 translate-middle">Land Rover</h4>
+            </div>
+
+<div class="brand-ite border- px- position-relative "><img class="brand-img"
+        src="assets/img/brand/make_64818b686420c_suzuki-logo.png">
+    <h6 class="brand-title start-50 translate-middle">Suzuki</h4>
+</div>
+
+<div class="brand-ite border- px- position-relative "><img class="brand-img"
+        src="assets/img/brand/make_64818b686420c_suzuki-logo.png">
+    <h6 class="brand-title start-50 translate-middle">Suzuki</h4>
+</div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</section>
+<!--===== End Car Brand Section =====-->
+
+<!--===== Start Propuller Car Section =====-->
+<section>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-auto p-0 m-0">
+
+              <div class="row pb-3 p-0 m-0">
+                <div class="col-8">
+                    <h2 class="text-color fw-bold fs-3">Propuller in Car</h2>
+                </div>
+                <div class="col-4">
+                    <div class="text-end">
+                        <button class="prev-btn btn bg-color text-light me-2"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="next-btn btn bg-color text-light ms-2"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+              </div>
+
+<div class="propuller-cars">
+
+         <div class="position-relative">
+            <div class="card m-2 p-2 card-content ">
+                <abbr title="Add to Favorite">
+                <i class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-light hover"></i></abbr>
+                <a href="#"><img class="card-img" src="assets/img/featured-car.webp" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h2 class="card-title fs-6"><a href="#" class="text-color">Cadillac CT4</a></h2>
+                    <h6 class="text-danger fs-6">AED 34,344</h6>
+                    <p class="card-text ">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                </div>
+            </div>
+         </div>
+
+<div class="position-relative">
+    <div class="card m-2 p-2 card-content ">
+        <abbr title="Add to Favorite">
+            <i class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-light hover"></i></abbr>
+        <a href="#"><img class="card-img" src="assets/img/featured-car.webp" class="card-img-top" alt=""></a>
+        <div class="card-body">
+            <h2 class="card-title fs-6"><a href="#" class="text-color">Cadillac CT4</a></h2>
+            <h6 class="text-danger fs-6">AED 34,344</h6>
+            <p class="card-text ">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+        </div>
+    </div>
+</div>
+
+<div class="position-relative">
+    <div class="card m-2 p-2 card-content ">
+        <abbr title="Add to Favorite">
+            <i class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-light hover"></i></abbr>
+        <a href="#"><img class="card-img" src="assets/img/featured-car.webp" class="card-img-top" alt=""></a>
+        <div class="card-body">
+            <h2 class="card-title fs-6"><a href="#" class="text-color">Cadillac CT4</a></h2>
+            <h6 class="text-danger fs-6">AED 34,344</h6>
+            <p class="card-text ">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+        </div>
+    </div>
+</div>
+
+<div class="position-relative">
+    <div class="card m-2 p-2 card-content ">
+        <abbr title="Add to Favorite">
+            <i class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-light hover"></i></abbr>
+        <a href="#"><img class="card-img" src="assets/img/featured-car.webp" class="card-img-top" alt=""></a>
+        <div class="card-body">
+            <h2 class="card-title fs-6"><a href="#" class="text-color">Cadillac CT4</a></h2>
+            <h6 class="text-danger fs-6">AED 34,344</h6>
+            <p class="card-text ">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="position-relative">
+    <div class="card m-2 p-2 card-content ">
+        <abbr title="Add to Favorite">
+            <i class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-light hover"></i></abbr>
+        <a href="#"><img class="card-img" src="assets/img/featured-car.webp" class="card-img-top" alt=""></a>
+        <div class="card-body">
+            <h2 class="card-title fs-6"><a href="#" class="text-color">Cadillac CT4</a></h2>
+            <h6 class="text-danger fs-6">AED 34,344</h6>
+            <p class="card-text ">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--===== End Propuller Car Section =====-->
+
+<section id="banner">
+    <div class="container my-3 bg-dange">
+        <div class="row">
+            <div class="col">
+                <a href="#"><img width="100%" src="assets/img/brand/Buy-Sell-Used-and-New-Cars-in-UAE-Find-Car-Prices-Dubicars-com (2).png"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--===== Start Featured Car Section =====-->
+<section>
+    <div class="container py-2 pt-5 mt-3">
+    
+        <h3 class="py-4 text-color fw-bold fs-3">Featured Cars in UAE</h3>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 gy-5 p-2 p-md-0">
+    
+            <div class="col position-relative featured-car">
+                <div class="card p-2 shadow-sm">
+                    <span class="position-absolute top-0 mt-3 featured-badge bg-color m-2 text-light fw-bold"><i
+                            class="fa-regular fa-star fw-bold me-1"></i>Featured</span>
+                <abbr title="Add to Favorite"><i class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-light hover"></i></abbr>
+                    <a href="#"><img class="card-img" src="assets/img/brand/6525065aab6540f1a97fa4790d03a2f4-.avif"
+                            class="card-img-top" alt=""></a>
+                    <div class="card-body">
+                        <h2 class="card-title fs-6 "><a href="#" class="text-color">Nissan • Patrol • LE PL2</a></h2>
+                        <h6 class="text-danger fs-6">AED 258,000</h6>
+                        <p class="card-text ">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                    </div>
+                </div>
+            </div>
+    
+        <div class="col position-relative featured-car">
+            <div class="card p-2 shadow-sm">
+                <span class="position-absolute top-0 mt-3 featured-badge bg-color m-2 text-light fw-bold"><i
+                        class="fa-regular fa-star fw-bold me-1"></i>Featured</span>
+                <abbr title="Add to Favorite"><i
+                        class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-light hover"></i></abbr>
+                <a href="#"><img class="card-img" src="assets/img/brand/6525065aab6540f1a97fa4790d03a2f4-.avif"
+                        class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h2 class="card-title fs-6 "><a href="#" class="text-color">Nissan • Patrol • LE PL2</a></h2>
+                    <h6 class="text-danger fs-6">AED 258,000</h6>
+                    <p class="card-text ">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col position-relative featured-car">
+            <div class="card p-2 shadow-sm">
+                <span class="position-absolute top-0 mt-3 featured-badge bg-color m-2 text-light fw-bold"><i
+                        class="fa-regular fa-star fw-bold me-1"></i>Featured</span>
+                <abbr title="Add to Favorite"><i
+                        class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-light hover"></i></abbr>
+                <a href="#"><img class="card-img" src="assets/img/brand/6525065aab6540f1a97fa4790d03a2f4-.avif"
+                        class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h2 class="card-title fs-6 "><a href="#" class="text-color">Nissan • Patrol • LE PL2</a></h2>
+                    <h6 class="text-danger fs-6">AED 258,000</h6>
+                    <p class="card-text ">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                </div>
+            </div>
+        </div>
+    
+    
+            <div class="col position-relative featured-car">
+                <div class="card p-2 shadow-sm">
+                    <span class="position-absolute top-0 mt-3 featured-badge bg-color m-2 text-light fw-bold"><i
+                            class="fa-regular fa-star fw-bold me-1"></i>Featured</span>
+                    <abbr title="Add to Favorite"><i
+                            class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-light hover"></i></abbr>
+                    <a href="#"><img class="card-img" src="assets/img/brand/6525065aab6540f1a97fa4790d03a2f4-.avif"
+                            class="card-img-top" alt=""></a>
+                    <div class="card-body">
+                        <h2 class="card-title fs-6 "><a href="#" class="text-color">Nissan • Patrol • LE PL2</a></h2>
+                        <h6 class="text-danger fs-6">AED 258,000</h6>
+                        <p class="card-text ">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                    </div>
+                </div>
+            </div>
+    
+    <div class="col position-relative featured-car">
+        <div class="card p-2 shadow-sm">
+            <span class="position-absolute top-0 mt-3 featured-badge bg-color m-2 text-light fw-bold"><i
+                    class="fa-regular fa-star fw-bold me-1"></i>Featured</span>
+            <abbr title="Add to Favorite"><i
+                    class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-light hover"></i></abbr>
+            <a href="#"><img class="card-img" src="assets/img/brand/6525065aab6540f1a97fa4790d03a2f4-.avif"
+                    class="card-img-top" alt=""></a>
+            <div class="card-body">
+                <h2 class="card-title fs-6 "><a href="#" class="text-color">Nissan • Patrol • LE PL2</a></h2>
+                <h6 class="text-danger fs-6">AED 258,000</h6>
+                <p class="card-text ">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+            </div>
+        </div>
+    </div>
+    
+        <div class="col position-relative featured-car">
+            <div class="card p-2 shadow-sm">
+                <span class="position-absolute top-0 mt-3 featured-badge bg-color m-2 text-light fw-bold"><i
+                        class="fa-regular fa-star fw-bold me-1"></i>Featured</span>
+                <abbr title="Add to Favorite"><i
+                        class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-light hover"></i></abbr>
+                <a href="#"><img class="card-img" src="assets/img/brand/6525065aab6540f1a97fa4790d03a2f4-.avif"
+                        class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h2 class="card-title fs-6 "><a href="#" class="text-color">Nissan • Patrol • LE PL2</a></h2>
+                    <h6 class="text-danger fs-6">AED 258,000</h6>
+                    <p class="card-text ">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                </div>
+            </div>
+        </div>
+    
+            <div class="col position-relative featured-car">
+                <div class="card p-2 shadow-sm">
+                    <span class="position-absolute top-0 mt-3 featured-badge bg-color m-2 text-light fw-bold"><i
+                            class="fa-regular fa-star fw-bold me-1"></i>Featured</span>
+                    <abbr title="Add to Favorite"><i
+                            class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-light hover"></i></abbr>
+                    <a href="#"><img class="card-img" src="assets/img/brand/6525065aab6540f1a97fa4790d03a2f4-.avif"
+                            class="card-img-top" alt=""></a>
+                    <div class="card-body">
+                        <h2 class="card-title fs-6 "><a href="#" class="text-color">Nissan • Patrol • LE PL2</a></h2>
+                        <h6 class="text-danger fs-6">AED 258,000</h6>
+                        <p class="card-text ">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col bg-light pt-1" style="border-radius: 28px;">
+                <div class="mt-0 mt-md-5 p-3 text-center view-more">
+                    <img src="assets/img/logo.png" width="160px">
+                    <button class="btn rounded-pill text-color p-3 fw-bold bg-white btn-large shadow">View More Car<i class="fa-solid fa-arrow-right-long ms-2"></i></button>
+                </div>
+    
+            </div>
+    
+    
+        </div>
+    </div>
+</section>
+<!--===== End Featured Car Section =====-->
+
+<!--===== Start Benifits Car Section =====-->
+<section>
+    <div class="container py-5 mt-5">
+        <div class="row gx-0 gy-5 gy-md-5 gx-md-5">
+            <h2 class="text-center text-color fw-bold fs-3">Why sell your car with <span class="text-danger">XCars?</span>
+</h2>
+            <div class="col-lg-3 col-md-6">
+<div class="card text-center shadow border-0">
+    <img src="assets/img/brand/experience.png" class="card-img-top pt-3 w-25 m-auto">
+    <div class="card-body">
+        <h6 class="card-subtitle mb-2">Smoothest experience</h6>
+        <p class="card-text text-muted">Sold with absolute ease, fast and secure. we promise!
+</p>
+    </div>
+</div>
+        </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center shadow border-0">
+                        <img src="assets/img/brand/trust.png" class="card-img-top pt-3 w-25 m-auto">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2">Your expert advisors
+</h6>
+                            <p class="card-text text-muted">From valuation to transfer, we're with you at every step.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card text-center shadow border-0">
+                            <img src="assets/img/brand/save-money.png" class="card-img-top pt-3 w-25 m-auto">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2">3 year selling experience
+</h6>
+                                <p class="card-text text-muted">Serving thousands of dealers & customers for more than 3 years.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card text-center shadow border-0">
+                                <img src="assets/img/brand/no-money.png" class="card-img-top pt-3 w-25 m-auto">
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-2">No additional fee
+</h6>
+                                    <p class="card-text text-muted">Some classifieds take a large additional fee, we don’t.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="add-car.html" class="btn btn-outline-dark fw-bold m-auto mt-5 sell-car-btn text-center">Sell your car now<img src="assets/img/brand/checklist.png" class="ms-2" width="30px"></a>
+        </div>
+    </div>
+</section>
+
+<!--===== End Benifits Car Section =====-->
+
+<!--===== Car Youtube Video Section =====-->
+<section>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col m-0 p-0">
+        <div class='sk-ww-youtube-channel-videos' data-embed-id='25359098'></div>
+        <script src='https://widgets.sociablekit.com/youtube-channel-videos/widget.js' async defer></script>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--===== End Car Youtube Video Section =====-->
+
+<!--=======FOOTER SECTION===========-->
+<footer>
+    <div class="container text-light pb-5 pb-md-1">
+        <div class="row gy-3">
+            <!-- ====Footer Widget 1===-->
+            <div class="col-12 col-md-6 col-lg-3 bg-dange ">
+                <img src="assets/img/dark-logo.svg" class="py-3" width="250px">
+                <p>We offers you excellent solutions for Export/Import Data information.</p>
+                <ul class="list-group">
+                    <li class="my-1"><i class="far fa-envelope fs-5 text-light"></i> <a
+                            href="mailto:info@ucconnectservices.in"
+                            class="ms-2 text-light fw-light">info@ucconnectservices.in</a></li>
+                    <li class="my-1"><i class="fas fa-phone text-light fs-5"></i><a href="tel: +91 8287551900"
+                            class="ms-2 text-light fw-light">+91 8287551900</a></li>
+                    <li class="my-1"><i class="fa fa-building fs-5"></i><a href="tel: 011-41040505"
+                            class="ms-2 text-light fw-light">011-41040505</a></li>
+                </ul>
+
+            </div>
+
+            <!-- ====Footer Widget 2 ===-->
+            <div class="col-12 col-md-6 col-lg-3">
+                <h5 class="mb-3 border-start border-3 p-1 border-light">Our Company
+                </h5>
+                <ul class="list-group footer-link position-relative">
+                    <li><a href="#" class="fw-lihgt">About Us</a></li>
+                    <li><a href="#" class="fw-lihgt">Contact Us</a></li>
+                    <li><a href="#" class="fw-lihgt">Return Policy</a></li>
+                    <li><a href="#" class="fw-lihgt">Terms & Conditions</a></li>
+                    <li><a href="#" class="fw-lihgt">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- ====Footer Widget 3 ===-->
+            <div class="col-12 col-md-6 col-lg-3">
+                <h5 class="mb-3 border-start border-3 p-1 border-light">Usefull Links
+                </h5>
+                <ul class="list-group footer-link position-relative">
+                    <li><a href="#" class="fw-lihgt">FAQ</a></li>
+                    <li><a href="#" class="fw-lihgt">Seller Policy</a></li>
+                    <li><a href="#" class="fw-lihgt">Seller Account</a></li>
+                    <li><a href="#" class="fw-lihgt">Advertisingng</a></li>
+                    <li><a href="#" class="fw-lihgt">Become a Partner</a></li>
+                    <li><a href="#" class="fw-lihgt">Career</a></li>
+                </ul>
+            </div>
+
+            <!-- ====Footer Widget 4 ===-->
+        <div class="col-12 col-md-6 col-lg-3 bg-dange ">
+            <div class="mb-3">
+                <h5 class="mb-3 border-start border-3 p-1 border-light">Stay Connect
+                </h5>
+                <label for="exampleFormControlInput1" class="form-label">Newsletter</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+        
+            <br>
+            <!-- Socile link -->
+            <h6>Social Media</h6>
+            <ul class="social-link d-flex p-0">
+                <li class="bg-light m-2"><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <li>
+                <li class="bg-light m-2"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li class="bg-light m-2"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li class="bg-light m-2"><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        
+        </div>
+
+
+        </div>
+    </div>
+    <div class="copy-right p-2 m-0 text-center">
+        <p class="text-light m-0">COPYRIGHT © 2022 <b class="text-primary">X.Car SERVICES</b> ALL RIGHTS
+            RESERVED</p>
+    </div>
+</footer>
+
+
+<!--=======END FOOTER SECTION===========-->
+
+  
+            <!-- THIS IS JQUERY BOOTSTRAP MAIN JS -->
+<script src="assets/js/jquery.slim.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery migrate 3-4-0.js"></script>
+<script src="assets/js/main.js"></script>
+          <!-- THIS IS JQUERY BOOTSTRAP MAIN JS -->
+<script type="text/javascript" src="assets/js/slick.min.js"></script>
+<script src="assets/js/nice-select.js"></script>
+
+</body>
+</html>
