@@ -361,7 +361,7 @@
 <!-- Tab Content -->
 <div class="tab-content bg-white p-4 rounded-2 col-12">
 
-<form action="" id="menu1" class="tab-pane active">
+<form action="" id="menu1" class="tab-pane fade show active">
 <div class="d-md-flex">
 
 <div class="col-12 col-md-2 mx-1 my-">
@@ -957,13 +957,24 @@
 
   
             <!-- THIS IS JQUERY BOOTSTRAP MAIN JS -->
-<script src="assets/js/jquery.slim.min.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/jquery migrate 3-4-0.js"></script>
-<script src="assets/js/main.js"></script>
+<script  type="text/javascript"  src="assets/js/jquery.slim.min.js"></script>
+<script  type="text/javascript"  src="assets/js/bootstrap.bundle.min.js"></script>
+<script  type="text/javascript"  src="assets/js/jquery migrate 3-4-0.js"></script>
+<script  type="text/javascript" src="assets/js/main.js"></script>
           <!-- THIS IS JQUERY BOOTSTRAP MAIN JS -->
 <script type="text/javascript" src="assets/js/slick.min.js"></script>
-<script src="assets/js/nice-select.js"></script>
-
+<script type="text/javascript" src="assets/js/nice-select.js"></script>
+<script>
+   //====Search For Car=====//
+    NiceSelect.bind(document.getElementById("select-city"), { searchable: true, placeholder: 'Select City' });
+    NiceSelect.bind(document.getElementById("select-make"), { searchable: true, placeholder: 'Select Make' });
+    NiceSelect.bind(document.getElementById("select-model"), { searchable: true, placeholder: 'Select Model' });
+    NiceSelect.bind(document.getElementById("select-transmission"), { searchable: false, placeholder: 'Select Transmission' });
+    //Search For Car Parts//
+    NiceSelect.bind(document.getElementById("parts-brand"), { searchable: true, placeholder: 'Select Brand' });
+    NiceSelect.bind(document.getElementById("parts-model"), { searchable: true, placeholder: 'Select Model' });
+    NiceSelect.bind(document.getElementById("parts-name"), { searchable: true, placeholder: 'Select Parts' });
+    NiceSelect.bind(document.getElementById("parts-condtion"), { searchable: false, placeholder: 'Select Condtion' });
+</script>
 </body>
 </html>
